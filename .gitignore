@@ -55,3 +55,5 @@ __pycache__
 playground/
 # TinyLLaVABench
 experiments/pokemon/
+experiments/TinyLLaVA*/
+experiments/wandb/

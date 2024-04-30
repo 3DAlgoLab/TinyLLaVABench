@@ -10,13 +10,13 @@ from PIL import Image
 
 # %%
 pokemon_data = []
-pokemon_image_path = "/dev_repo/VLM/TinyLLaVABench/experiments/pokemon/image"
+pokemon_image_path = "/dev_repo/vlms/TinyLLaVABench/experiments/pokemon/image"
 pokemon_data_path = (
-    "/dev_repo/VLM/TinyLLaVABench/experiments/pokemon/pokemon_blip_captions.json"
+    "/dev_repo/vlms/TinyLLaVABench/experiments/pokemon/pokemon_blip_captions.json"
 )
 os.makedirs(pokemon_image_path, exist_ok=True)
 
-data_path = "/data/PokemonBLIPCaptions"
+data_path = "/mnt/e/data/PokemonBLIPCaptions_mod"
 # ds = load_dataset("lambdalabs/pokemon-blip-captions")
 ds = load_dataset(data_path)
 

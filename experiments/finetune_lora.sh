@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Assign the arguments to variables
-DATA_PATH="/dev_repo/VLM/TinyLLaVABench/experiments/pokemon/pokemon_blip_captions.json"
-IMAGE_PATH="/dev_repo/VLM/TinyLLaVABench/experiments/"
-OUTPUT_DIR="/dev_repo/VLM/TinyLLaVABench/experiments/TinyLLaVA-3.1B-lora"
+DATA_PATH="/dev_repo/vlms/TinyLLaVABench/experiments/pokemon/pokemon_blip_captions.json"
+IMAGE_PATH="/dev_repo/vlms/TinyLLaVABench/experiments/"
+OUTPUT_DIR="/dev_repo/vlms/TinyLLaVABench/experiments/TinyLLaVA-3.1B-lora"
 
 deepspeed ../tinyllava/train/train.py \
     --deepspeed ../scripts/tiny_llava/zero3.json \
